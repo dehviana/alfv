@@ -247,9 +247,6 @@ hr {
   letter-spacing: 1px;
 }
 
-
-
-
 footer {
   margin: 3em 0;
   width: 100%;
@@ -293,11 +290,6 @@ footer .copy, footer .copy a {
   color: #8e8e8e;
 }
 
-#iframe{
-  width: 100%;
-  margin-left: -10%;
-  height: 800px;
-}
 
 .menuBar li
 {
