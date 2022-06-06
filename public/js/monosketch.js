@@ -20,7 +20,68 @@
 //   line(0, y, width, y);
 // }
 
-var counter = 10;
+
+
+
+
+// var counter = 10;
+
+// function setup() {
+// 	createCanvas(windowWidth, windowHeight);
+// 	background(0);
+// }
+
+// function draw() {
+// 	background(0);
+	
+// 	rectMode(CENTER);
+
+// 	translate(0, height / 2);
+
+// 	mouseX/1000
+// 	let num = map(mouseX, 0, width, 0, 200);
+// 	//let num = map(sin(millis()/1000), -1, 1, 10, 200);
+
+// 	for (let y = 0; y < num; y += 1) {
+		
+// 		let rot = map(y, 0, num, 0, PI);
+// 		let posx = map(y, 0, num, 0, width);
+		
+// 		push();
+// 		translate(posx, 0);
+// 		rotate(rot);
+// 		noFill();
+// 		stroke(55);
+// 		rect(mouseY/2, 	mouseY/2, mouseX/2, mouseX/2);
+// 		//arc(mouseY/2, mouseY/2, mouseX/2, mouseX/2, 0, PI);
+//     	//line(width/2, 0, height/2, 0);
+// 		ellipse(mouseY/2, 	mouseY/2, mouseX/2, mouseX/2);
+// 		pop();
+// 	}
+// }
+
+// function windowResized() {
+//   resizeCanvas(windowWidth,windowHeight);
+// }
+
+
+
+
+
+
+
+// function setup(){
+// 	createCanvas(windowWidth, windowHeight);
+// }
+// function draw(){
+// 	stroke(55);
+// 	line(0,0,mouseX,mouseY);
+// }
+
+
+
+
+var counter = 0;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -33,7 +94,7 @@ function draw() {
 	rectMode(CENTER);
 
 	translate(0, height / 2);
-
+	
 	mouseX/1000
 	let num = map(mouseX, 0, width, 0, 200);
 	//let num = map(sin(millis()/1000), -1, 1, 10, 200);
@@ -42,22 +103,17 @@ function draw() {
 		
 		let rot = map(y, 0, num, 0, PI);
 		let posx = map(y, 0, num, 0, width);
+		//let col = map(y, 0, num, 0, 255);
+		//stroke(col);
 		
 		push();
 		translate(posx, 0);
 		rotate(rot);
 		noFill();
 		stroke(255);
-		rect(mouseY/2, 	mouseY/2, mouseX/2, mouseX/2);
-		arc(mouseY/2, mouseY/2, mouseX/2, mouseX/2, 0, PI);
-    //line(width/2, 0, height/2, 0);
-	
-	
-	ellipse(mouseY/2, 	mouseY/2, mouseX/2, mouseX/2);
+		rect(0, 0, 150, 150);
+		//arc(0, 0, 150, 150, 0, PI);
+		//line(0, 0, 100, 0);
 		pop();
 	}
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth,windowHeight);
 }
