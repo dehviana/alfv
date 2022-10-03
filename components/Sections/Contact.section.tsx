@@ -1,0 +1,48 @@
+import type { NextComponentType } from "next";
+
+import {
+  BsSpotify,
+  MdEmail,
+  AiOutlineGithub,
+  AiOutlineTwitter,
+  BsLinkedin,
+  BsBehance,
+} from "../Misc/Icons.collection";
+
+import { Icon } from "../Misc/Icon.component";
+
+const Contact: NextComponentType = () => {
+  return (
+    <div className="px-3 font-sen" id="contact">
+      <p className="text-3xl font-bold text-white">Get in touch</p>
+
+      <div className="my-8 flex flex-row justify-center gap-x-4">
+        <Icon icon={<AiOutlineGithub />} url="https://github.com/dehviana" />
+
+        <Icon
+          icon={<AiOutlineTwitter />}
+          url="https://twitter.com/monomonio"
+        />
+        <Icon
+          icon={<BsLinkedin />}
+          url="https://www.linkedin.com/in/dehviana/"
+        />
+        <Icon icon={<MdEmail />} url="mailto:dehviana@gmail.com" />
+
+        <Icon
+          icon={<BsSpotify />}
+          url="https://open.spotify.com/user/dehviana"
+        />
+
+      <Icon
+          icon={<BsBehance
+            />}
+          url="https://www.behance.net/dehviana"
+        />
+
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
